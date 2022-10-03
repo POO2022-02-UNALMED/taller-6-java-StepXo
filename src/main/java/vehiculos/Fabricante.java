@@ -7,7 +7,7 @@ public class Fabricante {
     private Pais pais;
     private static HashMap<Pais,Integer> paises = new HashMap<Pais,Integer>();
 
-    Fabricante(String nombre, Pais pais){
+    public Fabricante(String nombre, Pais pais){
         this.nombre=nombre;
         this.pais=pais;
 

@@ -13,7 +13,7 @@ public class Vehiculo {
     static int CantidadVehiculos=0;
     private static HashMap<Fabricante,Integer> fabricantes = new HashMap<Fabricante,Integer>();
 
-    Vehiculo(String placa, int puertas, int velocidadMaxima,String nombre, int precio, int peso, String traccion, Fabricante fabricante){
+    public Vehiculo(String placa, int puertas, int velocidadMaxima,String nombre, int precio, int peso, String traccion, Fabricante fabricante){
         this.placa=placa;
         this.puertas=puertas;
         this.velocidadMaxima=velocidadMaxima;
@@ -38,7 +38,7 @@ public class Vehiculo {
                 "\nCamiones: " + Camion.getCamiones();
     }
 
-    
+
     //Setters y getters
     public String getPlaca() {return placa;}
     public void setPlaca(String placa) {this.placa = placa;}
